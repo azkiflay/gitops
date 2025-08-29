@@ -53,7 +53,7 @@ The above "*git push origin main*" is one event that can trigger execution of th
         <img src="figures/workflow_1.png" style="max-width:100%; height:auto;">
       </td>
       <td>
-        <img src="figures/eks_aws_console_4.png" style="max-width:100%; height:auto;">
+        <img src="figures/workflow_2.png" style="max-width:100%; height:auto;">
       </td>
     </tr>
   </table>
