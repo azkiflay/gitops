@@ -147,9 +147,16 @@ Details about runners can be easily obtained from the respective job. For exampl
       </td>
     </tr>
   </table>
-  <figcaption><strong>Figure 4: </strong> Push event vs Workflow on GitHub Actions </figcaption>
+  <figcaption><strong>Figure 5: </strong> Push event vs Workflow on GitHub Actions </figcaption>
   </figure>
 As can be seen in Figure 5, the source of the runner image is indicated in the *Included Software*. Moreover, other runners for Windows, macOS and Ubuntu are available on https://github.com/actions/runner-images.
+
+Figure 6 shows a job that installs a package using the Ubuntu runner.
+<p align="left">
+<img src="figures/workflow_12.png" style="max-width:50%; height:auto;">
+</p>
+<p align="left"><strong>Figure 6:</strong> Job to install a package in Ubuntu runner </p>
+
 
 
 # References
