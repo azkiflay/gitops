@@ -226,7 +226,7 @@ As shown in Figure 7, and Figure 8, the self-hosted Linux runner was created on 
   <figcaption><strong>Figure 8: </strong> Self-hosted runner </figcaption>
   </figure>
 
-Having configured a self-hosted runner, jobs that are created with "**runs-on: self-hosted**" are executed through the runner.
+Having configured a self-hosted runner, jobs that are created with "**runs-on: self-hosted**" are executed through the runner. With the self-hosted runnering active (the "/.run.sh" process is active), jobs that are configured to use the runner with "**runs-on: self-hosted**", executing the workflow from GitHub will use the local runner configured above.
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
