@@ -3,6 +3,7 @@
 - [Practicals](#practicals)
   - [Install GitHub CLI](#install-github-cli)
 - [Components of GitHub Actions](#components-of-github-actions)
+  - [Status Badges](#status-badges)
 - [References](#references)
 
 # Introduction
@@ -122,6 +123,10 @@ VS Code has an extension for GitHub Action through which workflow files can be m
   </table>
   <figcaption><strong>Figure 3: </strong> Push event vs Workflow on GitHub Actions </figcaption>
   </figure>
+
+## Status Badges
+![CI](https://github.com/your-username/your-repo/actions/workflows/sample_1.yml/badge.svg)
+
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
