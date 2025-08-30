@@ -111,6 +111,7 @@ Figure 3 displays example workflow triggers by committing changes from the web i
   <figcaption><strong>Figure 3: </strong> Push event vs Workflow on GitHub Actions </figcaption>
   </figure>
 
+As can be seen in Figure 3, the the "*build*", "*checkout*", and "*process*" jobs are triggered by events from the GitHub Actions web interface and "*git push origin main*" from a local clone of the repository.
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
