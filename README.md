@@ -246,6 +246,12 @@ Figure 9  shows messages displays status messages at the local machine (self-hos
 
 Finally, there are pros and cons of using self-hosted runners, with *security* being one of the most important ones. While Github-hosted runners use high security measures to protect workflows, it is up to the user to enforce security measures for self-hosted runners.
 
+To remove the self-hosted runner:
+```bash
+  ./configure.sh remove --token <TOKEN> # e.g., ANRV3WW44HW6ZDBYQWQSQHLIWNJCC in the above example.
+```
+Alternatively, the self-hosted runner can be removed on the GitHub Actions web interface provided that it has been stopped on the local machine (it is in *Offline* status).
+
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
