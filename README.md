@@ -228,7 +228,7 @@ As shown in Figure 7, and Figure 8, the self-hosted Linux runner was created on 
 
 Having configured a self-hosted runner, jobs that are created with "**runs-on: self-hosted**" are executed through the runner. With the self-hosted runnering active (the "/.run.sh" process is active), jobs that are configured to use the runner with "**runs-on: self-hosted**", executing the workflow from GitHub will use the local runner configured above. If the self-hosted runner is not active, it will labeled as "Offline" on GitHub. 
 
-Figure 9  shows messages displays status messages at the local machine (self-hosted runner) and the relevant job on GitHub.
+Figure 9  shows messages displays status messages at the local machine (self-hosted runner) and the relevant job on GitHub. It can been that the self-hosted runner was indeed used to execute the job (*update-env-self-hosted*) in the workflow.
 <figure>
   <table>
     <tr>
@@ -240,7 +240,7 @@ Figure 9  shows messages displays status messages at the local machine (self-hos
       </td>
     </tr>
   </table>
-  <figcaption><strong>Figure 8: </strong> Self-hosted runner </figcaption>
+  <figcaption><strong>Figure 9: </strong> Workflow with a self-hosted runner </figcaption>
   </figure>
 
 
