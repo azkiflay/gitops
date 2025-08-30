@@ -109,7 +109,7 @@ Figure 3 displays example workflow triggers by committing changes from the web i
 
 As can be seen in Figure 3, the the "*build*", "*checkout*", and "*process*" jobs are triggered by events from the GitHub Actions web interface and "*git push origin main*" from a local clone of the repository.
 
-VS Code has an extension for GitHub Action through which workflow files can be managed. Figure 4 shows a screenshot of the extension. As can be seen in Figure 4, after signing in to GitHub, **Workflows** of the current branch are shown under the **GitHub Actions**, which is indicated by two connected squares icon.
+VS Code has an extension for GitHub Action through which workflow files, and runs can be created, and managed, respectively. Figure 4 shows a screenshot of the extension. As can be seen in Figure 4, after signing in to GitHub, **Workflows** of the current branch are shown under the **GitHub Actions**, which is indicated by two connected squares icon.
 <figure>
   <table>
     <tr>
@@ -125,7 +125,7 @@ VS Code has an extension for GitHub Action through which workflow files can be m
   </figure>
 
 ## Status Badges
-![CI](https://github.com/your-username/your-repo/actions/workflows/sample_1.yml/badge.svg)
+![CI](https://github.com/azkiflay/gitops/actions/workflows/sample_1.yml/badge.svg)
 
 
 # References
