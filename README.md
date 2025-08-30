@@ -2,7 +2,6 @@
 - [Introduction](#introduction)
 - [Practicals](#practicals)
   - [Install GitHub CLI](#install-github-cli)
-  - [VS Code GitHub Actions](#vs-code-github-actions)
 - [Components of GitHub Actions](#components-of-github-actions)
 - [References](#references)
 
@@ -62,11 +61,6 @@ The above "*git push origin main*" is one event that can trigger execution of th
   <figcaption><strong>Figure 2: </strong> Push event vs Workflow on GitHub Actions </figcaption>
   </figure>
 
-
-
-
-## VS Code GitHub Actions
-
 # Components of GitHub Actions
 - Events that trigger automation: occurs due to a change on a GitHub repository, which is identified by a Secure Hashing Algorithm SHA1 value. 
 - Parts that achieve the automation: 
@@ -88,6 +82,7 @@ The above "*git push origin main*" is one event that can trigger execution of th
 Ways to create a workflow:
 - (1) Use the Actions tab on the GitHub code repo and use one of the suggested workflows for it.
 - (2) Create workflow file in "**.github/workflows/**" outside of GitHub
+- (3) Using VS Code GitHub Actions extension
 
 A workflow can be triggered from inside the web interface of the GitHub repository or from outside.
 Figure 3 displays example workflow triggers by committing changes from the web interface, and by **git push** event.
@@ -112,6 +107,21 @@ Figure 3 displays example workflow triggers by committing changes from the web i
   </figure>
 
 As can be seen in Figure 3, the the "*build*", "*checkout*", and "*process*" jobs are triggered by events from the GitHub Actions web interface and "*git push origin main*" from a local clone of the repository.
+
+VS Code has an extension for GitHub Action through which workflow files can be managed. Figure 4 shows a screenshot of the extension.
+<figure>
+  <table>
+    <tr>
+      <td>
+        <img src="figures/workflow_7.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_8.png" style="max-width:100%; height:auto;">
+      </td>
+    </tr>
+  </table>
+  <figcaption><strong>Figure 3: </strong> Push event vs Workflow on GitHub Actions </figcaption>
+  </figure>
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
