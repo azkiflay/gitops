@@ -89,6 +89,28 @@ Ways to create a workflow:
 - (1) Use the Actions tab on the GitHub code repo and use one of the suggested workflows for it.
 - (2) Create workflow file in "**.github/workflows/**" outside of GitHub
 
+A workflow can be triggered from inside the web interface of the GitHub repository or from outside.
+Figure 3 displays example workflow triggers by committing changes from the web interface, and by **git push** event.
+<figure>
+  <table>
+    <tr>
+      <td>
+        <img src="figures/workflow_3.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_4.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_5.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_6.png" style="max-width:100%; height:auto;">
+      </td>
+    </tr>
+  </table>
+  <figcaption><strong>Figure 3: </strong> Push event vs Workflow on GitHub Actions </figcaption>
+  </figure>
+
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
