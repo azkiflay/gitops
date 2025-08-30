@@ -192,7 +192,22 @@ As can be seen in Figure 7, detail steps are provided under **Download** and **C
     ./run.sh
 ```
 
-As shown in Figure 8, the self-hosted Linux runner was created on the local machine according to the above steps, and the self-hosted runner also appeared online on the GitHub repository.
+As shown in Figure 7, and Figure 8, the self-hosted Linux runner was created on the local machine according to the above steps, and the self-hosted runner also appeared online on the GitHub repository.
+
+<figure>
+  <table>
+    <tr>
+      <td>
+        <img src="figures/workflow_17.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_18.png" style="max-width:100%; height:auto;">
+      </td>
+    </tr>
+  </table>
+  <figcaption><strong>Figure 7: </strong> Self-hosted runner </figcaption>
+  </figure>
+
 
 <figure>
   <table>
@@ -208,7 +223,7 @@ As shown in Figure 8, the self-hosted Linux runner was created on the local mach
       </td>
     </tr>
   </table>
-  <figcaption><strong>Figure 7: </strong> Self-hosted runner </figcaption>
+  <figcaption><strong>Figure 8: </strong> Self-hosted runner </figcaption>
   </figure>
 
 Having configured a self-hosted runner, jobs that are created with "**runs-on: self-hosted**" are executed through the runner.
