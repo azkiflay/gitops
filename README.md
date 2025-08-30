@@ -143,7 +143,7 @@ Details about runners can be easily obtained from the respective job. For exampl
         <img src="figures/workflow_10.png" style="max-width:100%; height:auto;">
       </td>
       <td>
-        <img src="figures/workflow_10.png" style="max-width:100%; height:auto;">
+        <img src="figures/workflow_11.png" style="max-width:100%; height:auto;">
       </td>
     </tr>
   </table>
