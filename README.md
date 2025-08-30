@@ -132,7 +132,7 @@ VS Code has an extension for GitHub Action through which workflow files, and run
 # Runners
 Systems where jobs in a workflow are executed are called **runners**, which are virtual machine (VMs) servers provided by GitHub or self-hosted servers. For example, "**runs-on: ubuntu-latest**" specifies an Ubuntu runner on GitHub. Windows and macOS runners cost *twice* and *ten* times as much as Linux runners.
 
-Details about runners can be easily obtained from the respective job. For example, Figure 5 displays the details about the runner used in the **build** job in the earlier example by expanding the details under "**Set up job**" -- "**Runner Image**" -- ["**Image**", "**Included Software**", etc].
+Details about runners can be easily obtained from the respective job. For example, Figure 5 displays the details about the runner used in the **build** job in the earlier example by expanding the details under "*Set up job*" -- "*Runner Image*" -- ["**Image*", "*Included Software*", etc].
 <figure>
   <table>
     <tr>
