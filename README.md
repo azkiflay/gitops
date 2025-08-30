@@ -3,7 +3,7 @@
 - [Practicals](#practicals)
   - [Install GitHub CLI](#install-github-cli)
 - [Components of GitHub Actions](#components-of-github-actions)
-  - [Status Badges](#status-badges)
+- [Runners](#runners)
 - [References](#references)
 
 # Introduction
@@ -121,12 +121,31 @@ VS Code has an extension for GitHub Action through which workflow files, and run
       </td>
     </tr>
   </table>
-  <figcaption><strong>Figure 3: </strong> Push event vs Workflow on GitHub Actions </figcaption>
+  <figcaption><strong>Figure 4: </strong> Push event vs Workflow on GitHub Actions </figcaption>
   </figure>
 
+<!--
 ## Status Badges
 ![CI](https://github.com/azkiflay/gitops/actions/workflows/sample_1.yml/badge.svg)
+-->
 
+# Runners
+Systems where jobs in a workflow are executed are called **runners**, which are virtual machine (VMs) servers provided by GitHub or self-hosted servers. For example, "**runs-on: ubuntu-latest**" specifies an Ubuntu runner on GitHub. Windows and macOS runners cost *twice* and *ten* times as much as Linux runners.
+
+Details about runners can be easily obtained from the respective job. For example, Figure 5 displays the details about the runner used in the **build** job in the earlier example by expanding the details under "**Set up job**" -- "**Runner Image**" -- ["**Image**", "**Included Software**", etc].
+<figure>
+  <table>
+    <tr>
+      <td>
+        <img src="figures/workflow_9.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_10.png" style="max-width:100%; height:auto;">
+      </td>
+    </tr>
+  </table>
+  <figcaption><strong>Figure 4: </strong> Push event vs Workflow on GitHub Actions </figcaption>
+  </figure>
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
