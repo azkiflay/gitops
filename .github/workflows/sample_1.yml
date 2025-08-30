@@ -44,8 +44,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  update-env:
+  update-env-github-hosted:
     runs-on: ubuntu-latest
+    steps:
+      - name: Install Package
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+  update-env-self-hosted:
+    runs-on: self-hosted
     steps:
       - name: Install Package
         run: |
