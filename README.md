@@ -179,6 +179,7 @@ Figure 7 shows how to setup a self-hosted Linux runner.
 As can be seen in Figure 7, detail steps are provided under **Download** and **Configure** sections, which are summarized below.
 **Download**: </br>
 ```bash
+    cd .github/actions
     mkdir actions-runner && cd actions-runner
     curl -o actions-runner-linux-x64-2.328.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.328.0/actions-runner-linux-x64-2.328.0.tar.gz
     echo "01066fad3a2893e63e6ca880ae3a1fad5bf9329d60e77ee15f2b97c148c3cd4e  actions-runner-linux-x64-2.328.0.tar.gz" | shasum -a 256 -c
@@ -189,9 +190,28 @@ As can be seen in Figure 7, detail steps are provided under **Download** and **C
 ```bash
     ./config.sh --url https://github.com/azkiflay/gitops --token ANRV3WW44HW6ZDBYQWQSQHLIWNJCC
     ./run.sh
-    runs-on: self-hosted
 ```
 
+As shown in Figure 8, the self-hosted Linux runner was created on the local machine according to the above steps, and the self-hosted runner also appeared online on the GitHub repository.
+
+<figure>
+  <table>
+    <tr>
+      <td>
+        <img src="figures/workflow_14.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_15.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_16.png" style="max-width:100%; height:auto;">
+      </td>
+    </tr>
+  </table>
+  <figcaption><strong>Figure 7: </strong> Self-hosted runner </figcaption>
+  </figure>
+
+Having configured a self-hosted runner, jobs that are created with "**runs-on: self-hosted**" are executed through the runner.
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
