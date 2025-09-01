@@ -14,10 +14,11 @@ defaults:
     
 jobs:
   build:
-    defaults:
-        run:
-            shell: bash
-            working-directory: dev
+    # job level defaults
+    # defaults:
+    #    run:
+    #        shell: bash
+    #        working-directory: dev
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
