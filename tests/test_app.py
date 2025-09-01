@@ -1,5 +1,5 @@
 # tests/test_app.py
-from app.app import app
+from dev.app import app
 import json
 import sys
 import os
