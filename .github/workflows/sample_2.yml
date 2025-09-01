@@ -1,16 +1,19 @@
 name: Pipeline
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+
 run-name: CI Pipeline run by @${{ github.actor }} # actor property of GitHub context
 
-defaults:
-  run:
-    shell: bash
-    working-directory: workdir
+# workflow level defaults
+# defaults:
+#  run:
+#    shell: bash
+#    working-directory: workdir
     
 jobs:
   build:
