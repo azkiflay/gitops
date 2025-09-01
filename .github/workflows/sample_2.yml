@@ -16,7 +16,7 @@ jobs:
   build:
     defaults:
         run:
-            shell: sh
+            shell: bash
             working-directory: dev
     runs-on: ubuntu-latest
     steps:
