@@ -1,7 +1,9 @@
 # tests/test_app.py
 from dev.app import app
 import json
-from app import app
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def test_home():
     client = app.test_client()
