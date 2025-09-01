@@ -152,19 +152,24 @@ Details about runners can be easily obtained from the respective job. For exampl
 As can be seen in Figure 5, the source of the runner image is indicated in the *Included Software*. Moreover, other runners for Windows, macOS and Ubuntu are available on https://github.com/actions/runner-images.
 
 Figure 6 shows a job that installs a package using the Ubuntu runner.
-<p align="left">
-<img src="figures/workflow_12.png" style="max-width:50%; height:auto;">
-</p>
-<p align="left"><strong>Figure 6:</strong> Job to install a package in Ubuntu runner </p>
-
+<figure>
+  <table>
+    <tr>
+      <td>
+        <img src="figures/workflow_12.png" style="max-width:100%; height:auto;">
+      </td>
+      <td>
+        <img src="figures/workflow_9.png" style="max-width:100%; height:auto;">
+      </td>
+    </tr>
+  </table>
+  <figcaption><strong> Figure 6: </strong> Job to install a package in Ubuntu runner </figcaption>
+  </figure>
 
 Figure 7 shows how to setup a self-hosted Linux runner.
 <figure>
   <table>
     <tr>
-      <td>
-        <img src="figures/workflow_9.png" style="max-width:100%; height:auto;">
-      </td>
       <td>
         <img src="figures/workflow_10.png" style="max-width:100%; height:auto;">
       </td>
