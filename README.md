@@ -257,6 +257,15 @@ To remove the self-hosted runner:
 ```
 Alternatively, the self-hosted runner can be removed on the GitHub Actions web interface provided that it has been stopped on the local machine (it is in *Offline* status).
 
+## Deployment Environments
+- Development, staging, and production environments are identified using environment variables.
+- Jobs in workflows refer to these environments using environment variables
+- Accordingly, deployments happen in one of the environments
+- Secret and variables are set for each environment, protecting each deployment
+- Examples of deployment protection rules:
+  - Required reviewers: workflows can be set to be approved by up to six people.
+  - Wait timer: jobs can be set to wait a number of minutes after being triggered
+  - Deployment branches: all, protected, or selected branches can deploy
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
