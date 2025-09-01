@@ -14,8 +14,6 @@ defaults:
     
 jobs:
   build:
-    env: 
-        STAGE: dev
     defaults:
         run:
             shell: sh
