@@ -1,4 +1,5 @@
 # tests/test_app.py
+from dev.app import app
 import json
 from app import app
 
