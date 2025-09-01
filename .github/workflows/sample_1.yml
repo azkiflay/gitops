@@ -51,10 +51,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-pip
-  update-env-self-hosted:
-    runs-on: self-hosted
-    steps:
-      - name: Install Package
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
+  # update-env-self-hosted:
+  #  runs-on: self-hosted
+  #  steps:
+  #    - name: Install Package
+  #      run: |
+  #        sudo apt-get update
+  #        sudo apt-get install -y python3-pip
