@@ -1,0 +1,15 @@
+# Web framework
+flask==3.0.3
+
+# Database
+sqlalchemy==2.0.30
+
+# Testing
+pytest==8.3.2
+pytest-cov==5.0.0
+
+# Linting
+flake8==7.1.0
+
+# Security scanning
+bandit==1.7.9
