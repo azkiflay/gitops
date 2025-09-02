@@ -325,7 +325,7 @@ Alternatively, the self-hosted runner can be removed on the GitHub Actions web i
 
 **Note**: It is crucial to deactivate and delete the access credentials if they are shared publicly, as was done for the keys shown in Figure 11. In other words, for security reasons, new access keys were created for the *gitops* IAM user.
 
-- Create Amazon Elastic Cloud (EC2)
+- Create Amazon Elastic Cloud (EC2) Ubuntu instance
 <figure>
 <table>
   <tr>
@@ -360,9 +360,43 @@ Alternatively, the self-hosted runner can be removed on the GitHub Actions web i
     </td>
   </tr>
 </table>
-<figcaption><strong>Figure 10: </strong> Creating EC2 instance - part 2 </figcaption>
+<figcaption><strong>Figure 11: </strong> Creating EC2 instance - part 2 </figcaption>
 </figure>
 
+- Configure the EC2 instance to run Apache2 web server
+<figure>
+<table>
+  <tr>
+    <td>
+      <img src="figures/aws_ec2_8.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_ec2_9.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_ec2_10.png" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+</table>
+<figcaption><strong>Figure 12: </strong> Configuring the EC2 instance - part 1 </figcaption>
+</figure>
+
+<figure>
+<table>
+  <tr>
+    <td>
+      <img src="figures/aws_ec2_11.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_ec2_12.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_ec2_13.png" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+</table>
+<figcaption><strong>Figure 13: </strong> Configuring the EC2 instance - part 2 </figcaption>
+</figure>
 
 
 # References
