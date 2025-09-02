@@ -4,6 +4,8 @@
   - [Install GitHub CLI](#install-github-cli)
 - [Components of GitHub Actions](#components-of-github-actions)
 - [Runners](#runners)
+- [Deployment Environments](#deployment-environments)
+- [GitOps In Action](#gitops-in-action)
 - [References](#references)
 
 # Introduction
@@ -257,7 +259,7 @@ To remove the self-hosted runner:
 ```
 Alternatively, the self-hosted runner can be removed on the GitHub Actions web interface provided that it has been stopped on the local machine (it is in *Offline* status).
 
-## Deployment Environments
+# Deployment Environments
 - Development, staging, and production environments are identified using environment variables.
 - Jobs in workflows refer to these environments using environment variables
 - Accordingly, deployments happen in one of the environments
@@ -266,6 +268,65 @@ Alternatively, the self-hosted runner can be removed on the GitHub Actions web i
   - Required reviewers: workflows can be set to be approved by up to six people.
   - Wait timer: jobs can be set to wait a number of minutes after being triggered
   - Deployment branches: all, protected, or selected branches can deploy
+
+# GitOps In Action
+- Create an [AWS account](https://aws.amazon.com/)
+- Create IAM user (*gitops*) as shown in Figure - Figure below.
+<figure>
+<table>
+  <tr>
+    <td>
+      <img src="figures/aws_iam_1.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_iam_2.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_iam_3.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_iam_4.png" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+</table>
+<figcaption><strong>Figure 9: </strong> AWS IAM user creation - part 1 </figcaption>
+</figure>
+
+<figure>
+<table>
+  <tr>
+    <td>
+      <img src="figures/aws_iam_5.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_iam_6.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_iam_7.png" style="max-width:100%; height:auto;">
+    </td>
+    <td>
+      <img src="figures/aws_iam_8.png" style="max-width:100%; height:auto;">
+    </td>
+  </tr>
+</table>
+<figcaption><strong>Figure 10: </strong> AWS IAM user creation - part 2 </figcaption>
+</figure>
+
+- Configure and verify AWS CLI access for the *gitops* user as shown in Figure 11. 
+  ```bash
+    aws configure --profile gitops
+    aws sts get-caller-identity --profile gitops
+  ```
+
+<p align="left">
+<img src="figures/aws_iam_9.png" style="max-width:50%; height:auto;">
+</p>
+<p align="left"><strong>Figure 11:</strong> Configuring AWS CLI for gitops user </p>
+
+- Create Amazon Elastic Cloud (EC2)
+
+**Note**: It is crucial to deactivate and delete the access credentials if they are shared publicly, as has been done in this case. For security reasons, new access keys have been created in the same way as the old ones.
+
 
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
