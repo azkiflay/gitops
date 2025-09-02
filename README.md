@@ -368,4 +368,4 @@ Alternatively, the self-hosted runner can be removed on the GitHub Actions web i
 # References
 * Learning GitHub Actions by Brent Laster (O’Reilly). Copyright 2023 Tech Skills Transformations, LLC, 978-1-098-13107-4.
 * https://github.com/techupskills/learning-github-actions
-* 
+* Practical GitOps Infrastructure Management Using Terraform, AWS, and GitHub Actions,  by Rohit Salecha, Apress, 2023
